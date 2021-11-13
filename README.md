@@ -2,11 +2,9 @@
  This is a python module that can hide any annoying warning messages from external C and C++ libraries in your python project. There is a decorator called `hide_warnings` in this module, you can decorate any of your functions with this decorator, then no warning messages from external C and C++ libraries (if invoked) in your function will be printed to cmd/terminal.
 
 ## Installation
-
 `pip install hide_warnings`
 
 ## Usage
-
 For example, here is a function that when you run it, a warning message from external C and C++ libraries will be forcibly printed to cmd/terminal, which is very annoying, and in python normally it is hard to prevent the warning messages from non-python libraries, especially when the functions that throw out these warning messages are from compiled C and C++ executables (which means you cannot modify the code inside it) and you pretty much need to modify the source code and rebuild yourself to prevent these warning messages, which takes some work, and what's even worse is that some closed source C and C++ projects does not give out source code for you to build.
 
 What we want is to directly hide the warning messages we do not want to see from external C and C++ libraries in our python projects.
@@ -37,7 +35,7 @@ def func(a, b):
 3
 ```
 
-**Note that by default, all of the printed messages will be prevented inside the function you are decorated, including python's own `print` functions. If you still want to use python's `print` function to print some messages that is useful to you, you can set the keyword argument `out` to `False` for the decorator, which makes the function decorated could still use python's own `print` function.**
+**Note that by default, all of the printed messages will be prevented inside the decorated function, including python's own `print` functions. If you still want to use python's `print` function to print some messages that is useful to you, you can set the keyword argument `out` to `False` for the decorator, which makes the decorated function could still use python's own `print` function.**
 
 ```python
 from hide_warnings import hide_warnings
