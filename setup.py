@@ -4,7 +4,7 @@ from os import path
 setup(
     name='hide_warnings',
     py_modules=['hide_warnings'],
-    version='0.12',
+    version='0.14',
     license='LGPLv2.1',
     description='This is a python module that can hide any annoying warning messages from external C and C++ libraries in your python project',
     author='Rainbow-Dreamer',
@@ -12,7 +12,7 @@ setup(
     install_requires=['py'],
     url='https://github.com/Rainbow-Dreamer/hide_warnings',
     download_url=
-    'https://github.com/Rainbow-Dreamer/hide_warnings/archive/0.12.tar.gz',
+    'https://github.com/Rainbow-Dreamer/hide_warnings/archive/0.14.tar.gz',
     keywords=['python', 'hide warnings'],
     classifiers=[
         'Development Status :: 3 - Alpha',
