@@ -6,7 +6,8 @@ setup(
     py_modules=['hide_warnings'],
     version='0.14',
     license='LGPLv2.1',
-    description='This is a python module that can hide any annoying warning messages from external C and C++ libraries in your python project',
+    description=
+    'This is a python module that can hide any annoying warning messages from external C and C++ libraries in your python project',
     author='Rainbow-Dreamer',
     author_email='1036889495@qq.com',
     install_requires=['py'],
